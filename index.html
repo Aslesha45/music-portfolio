@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dreat Music</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"/>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    body {
+      background-image: url('https://img.freepik.com/premium-photo/glowing-music-sheets-notes-beautiful-lights-bokeh-background_120482-257.jpg?semt=ais_hybrid&w=740');
+      background-color: #ffffff;
+      color: #333;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    header {
+      background: linear-gradient(90deg, #6a5acd, #612291);
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    header h1 {
+      font-size: 30px;
+      font-weight: 700;
+      color: white;
+    }
+
+    header img {
+      width: 100px;
+      height: auto;
+      transition: transform 0.3s ease;
+    }
+
+    header img:hover {
+      transform: scale(1.1);
+    }
+
+    nav {
+      display: flex;
+    }
+
+    nav a {
+      color: #fff;
+      margin-left: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: color 0.3s ease-in-out;
+    }
+
+    nav a:hover {
+      color: #f0f8ff;
+    }
+
+    section {
+      padding: 80px 40px;
+      margin: 40px auto;
+      background-color:#89729E;
+      border-radius: 12px;
+      width: 90%;
+      max-width: 1200px;
+      animation: fadeInUp 1.5s forwards;
+    }
+
+    section h2 {
+      font-size: 40px;
+      margin-bottom: 25px;
+      color: #4b0082;
+      text-align: center;
+      font-weight: 700;
+    }
+
+    section p {
+      font-size: 18px;
+      line-height: 1.8;
+      color: #333;
+      text-align: center;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .artist-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .artist-profile {
+      background-color: #e6e6fa;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s ease;
+    }
+
+    .artist-profile:hover {
+      transform: scale(1.05);
+    }
+
+    .artist-profile img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .artist-profile h3 {
+      color: #4b0082;
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      max-width: 600px;
+      margin: 30px auto 0;
+    }
+
+    input, textarea {
+      padding: 15px;
+      border: 1px solid #dcdcdc;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+
+    input[type="submit"] {
+      background-color: #6a5acd;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #7b68ee;
+    }
+
+    footer {
+      background: linear-gradient(90deg, #6a5acd, #612291);
+      color: white;
+      text-align: center;
+      padding: 25px 10px;
+      font-size: 16px;
+      margin-top: 50px;
+    }
+
+    footer a {
+      color: #e0ffff;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: white;
+    }
+
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="/images/WhatsApp_Image_2025-04-26_at_01.01.59_28b7bb5f-removebg-preview.png" alt="Dreat Music Logo">
+    <h1>Dreat Music</h1>
+    <nav>
+      <a href="#intro">About</a>
+      <a href="#artists">Artists</a>
+      <a href="#goals">Goals</a>
+      <a href="#location">Location</a>
+      <a href="#join">Join</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="intro">
+    <h2>About Us</h2>
+    <p>Dreat Music Company is a rising creative powerhouse based in Bangladesh. We focus on nurturing young talents and producing impactful music that resonates worldwide.</p>
+  </section>
+
+  <section id="artists">
+    <h2>Our Artists</h2>
+    <div class="artist-grid">
+      <div class="artist-profile">
+        <h3>Dana - Solo Artist</h3>
+        <img src="https://img.freepik.com/premium-photo/illustration-ultra-realistic-4k-image-girl-singing-song_756405-53238.jpg" alt="Dana">
+        <p>Dana is a talented Bangladeshi artist studying at Ajou University in South Korea. She rose to fame through university music festivals and national competitions.</p>
+      </div>
+
+      <div class="artist-profile">
+        <h3>MONZO - Boy Group</h3>
+        <img src="https://easy-peasy.ai/cdn-cgi/image/quality=80,format=auto,width=700/https://media.easy-peasy.ai/0c691357-a0e1-43a9-b820-6b265a906a50/c537be11-b380-4584-984d-3a1ef2e0a3bd.png" alt="MONZO">
+        <p>MONZO blends hip-hop and pop with storytelling and choreography. This five-member group includes four Bangladeshi and one Indian member redefining boy band culture.</p>
+      </div>
+
+      <div class="artist-profile">
+        <h3>Bashi - Instrumental Artist</h3>
+        <img src="https://vitalentum.net/upload/016/u1628/7/9/3cf07937.webp" alt="Bashi">
+        <p>Bashi fuses traditional Bangladeshi sounds with modern beats. Their album "Beyond Time" brought global attention to South Asian instrumental innovation.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="goals">
+    <h2>Our Goals</h2>
+    <p>We aim to provide young artists with the support they need to shine. Our goal is to become a global hub for diverse, culturally rich, and innovative music.</p>
+  </section>
+
+  <section id="location">
+    <h2>Our Location</h2>
+    <p>We are headquartered in Dhaka, Bangladesh, with growing ties to South Korea. We're building a bridge between South Asia and the global music scene.</p>
+  </section>
+
+  <section id="join">
+    <h2>Join Us</h2>
+    <p>If you're passionate about music and want to join a vibrant team, fill out the form below. We're always on the lookout for the next big talent!</p>
+    <form>
+      <input type="text" placeholder="Name" required>
+      <input type="email" placeholder="Email" required>
+      <textarea rows="4" placeholder="Why do you want to join us?" required></textarea>
+      <input type="submit" value="Submit">
+    </form>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>We’d love to hear from you! Reach out via the methods below:</p>
+    <p><strong>Email:</strong> <a href="mailto:contact@dreatmusic.com">contact@dreatmusic.com</a></p>
+    <p><strong>Phone:</strong> <a href="tel:+8801234567890">+880 1234 567890</a></p>
+    <div style="text-align: center; margin-top: 20px;">
+      <a href="https://facebook.com/dreatmusic" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" width="32" />
+      </a>
+      <a href="https://instagram.com/dreatmusic" target="_blank" style="margin: 0 20px;">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" width="32" />
+      </a>
+      <a href="https://twitter.com/dreatmusic" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" width="32" />
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Dreat Music Company. All rights reserved. | <a href="#intro">Back to Top</a>
+  </footer>
+  <script src="script.js">// Smooth Scroll Navigation
+    const links = document.querySelectorAll('nav a');
+    links.forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        document.querySelector(e.target.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+    
+    // Modal
+    const modal = document.getElementById("myModal");
+    const closeBtn = document.querySelector(".close");
+    
+    window.onload = function() {
+      modal.style.display = "block";
+    };
+    
+    closeBtn.onclick = function() {
+      modal.style.display = "none";
+    };
+    
+    window.onclick = function(event) {
+      if (event.target === modal) {
+        modal.style.display = "none";
+      }
+    };
+    
+    // Form Validation
+    const form = document.getElementById('contact-form');
+    form.addEventListener('submit', function(e) {
+      const name = form.querySelector('input[name="name"]').value;
+      const email = form.querySelector('input[name="email"]').value;
+      const message = form.querySelector('textarea[name="message"]').value;
+    
+      if (!name || !email || !message) {
+        alert('Please fill out all fields.');
+        e.preventDefault();
+      }
+    });
+    
+    // Scroll Animations
+    const sections = document.querySelectorAll('section');
+    window.addEventListener('scroll', () => {
+      sections.forEach(section => {
+        if (section.getBoundingClientRect().top < window.innerHeight) {
+          section.style.opacity = '1';
+          section.style.transform = 'translateY(0)';
+        }
+      });
+    });
+    </script>
+  </body>
+</html>
